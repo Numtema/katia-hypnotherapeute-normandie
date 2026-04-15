@@ -4,6 +4,8 @@ import Contact from '@/components/Contact';
 import { Check, ShieldCheck, CreditCard } from 'lucide-react';
 import MutuelleLogo from '@/components/MutuelleLogo';
 
+import WhatsAppIcon from '@/components/WhatsAppIcon';
+
 const mutuelles = [
   { name: 'AG2R La Mondiale', domain: 'ag2rlamondiale.fr' },
   { name: 'APICIL', domain: 'apicil.com' },
@@ -55,7 +57,15 @@ export default function Tarifs() {
               <li className="flex items-start gap-3 text-sm text-[#555] font-light"><Check className="w-4 h-4 text-[#8ba394] mt-0.5" /> Troubles du sommeil</li>
               <li className="flex items-start gap-3 text-sm text-[#555] font-light"><Check className="w-4 h-4 text-[#8ba394] mt-0.5" /> Phobies et blocages</li>
             </ul>
-            <a href="#contact" className="w-full py-3 rounded-full border border-[#8ba394] text-[#8ba394] text-center uppercase tracking-widest text-xs font-medium hover:bg-[#8ba394] hover:text-white transition-all duration-300">Réserver</a>
+            <a 
+              href={`https://wa.me/33677495288?text=${encodeURIComponent('Bonjour Katia, je souhaite prendre rendez-vous pour une séance d\'Hypnose Ericksonienne.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 rounded-full border border-[#8ba394] text-[#8ba394] flex items-center justify-center gap-2 uppercase tracking-widest text-xs font-medium hover:bg-[#8ba394] hover:text-white transition-all duration-300"
+            >
+              <WhatsAppIcon className="w-4 h-4" />
+              Réserver
+            </a>
           </div>
 
           {/* Communication Animale */}
@@ -71,7 +81,15 @@ export default function Tarifs() {
               <li className="flex items-start gap-3 text-sm font-light"><Check className="w-4 h-4 text-white mt-0.5" /> Apaisement du stress animal</li>
               <li className="flex items-start gap-3 text-sm font-light"><Check className="w-4 h-4 text-white mt-0.5" /> Accompagnement fin de vie</li>
             </ul>
-            <a href="#contact" className="w-full py-3 rounded-full bg-white text-[#b5a496] text-center uppercase tracking-widest text-xs font-medium hover:bg-[#f9f8f6] transition-all duration-300 shadow-sm">Réserver</a>
+            <a 
+              href={`https://wa.me/33677495288?text=${encodeURIComponent('Bonjour Katia, je souhaite prendre rendez-vous pour une consultation en Communication Animale.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 rounded-full bg-white text-[#b5a496] flex items-center justify-center gap-2 uppercase tracking-widest text-xs font-medium hover:bg-[#f9f8f6] transition-all duration-300 shadow-sm"
+            >
+              <WhatsAppIcon className="w-4 h-4" />
+              Réserver
+            </a>
           </div>
 
           {/* Formation */}
@@ -87,7 +105,15 @@ export default function Tarifs() {
               <li className="flex items-start gap-3 text-sm text-[#555] font-light"><Check className="w-4 h-4 text-[#8ba394] mt-0.5" /> Développement de l'intuition</li>
               <li className="flex items-start gap-3 text-sm text-[#555] font-light"><Check className="w-4 h-4 text-[#8ba394] mt-0.5" /> Exercices pratiques</li>
             </ul>
-            <a href="#contact" className="w-full py-3 rounded-full border border-[#8ba394] text-[#8ba394] text-center uppercase tracking-widest text-xs font-medium hover:bg-[#8ba394] hover:text-white transition-all duration-300">Me contacter</a>
+            <a 
+              href={`https://wa.me/33677495288?text=${encodeURIComponent('Bonjour Katia, je souhaite avoir plus d\'informations sur la Formation Initiation.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 rounded-full border border-[#8ba394] text-[#8ba394] flex items-center justify-center gap-2 uppercase tracking-widest text-xs font-medium hover:bg-[#8ba394] hover:text-white transition-all duration-300"
+            >
+              <WhatsAppIcon className="w-4 h-4" />
+              Me contacter
+            </a>
           </div>
         </div>
       </section>

@@ -67,9 +67,14 @@ export default function ServiceCard({ service, index }: { service: ServiceType, 
               <RotateCcw className="w-4 h-4" />
             </button>
 
-            <a href="#contact" className="inline-flex items-center justify-center w-full py-3 rounded-full bg-[#8ba394] text-white uppercase tracking-widest text-xs font-medium hover:bg-[#7a9283] transition-all duration-300 gap-2">
-              <span>Réserver</span>
-              <ArrowRight className="w-4 h-4" />
+            <a 
+              href={`https://wa.me/33677495288?text=${encodeURIComponent(`Bonjour Katia, je souhaite prendre rendez-vous pour : ${service.title}.`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-full py-3 rounded-full bg-[#25D366] text-white uppercase tracking-widest text-xs font-medium hover:bg-[#128C7E] transition-all duration-300 gap-2"
+            >
+              <WhatsAppIcon className="w-4 h-4" />
+              <span>Réserver sur WhatsApp</span>
             </a>
           </div>
         </div>

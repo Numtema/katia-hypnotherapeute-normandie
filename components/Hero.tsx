@@ -83,7 +83,9 @@ export default function Hero() {
             Découvrir les services
           </a>
           <a
-            href="#contact"
+            href="https://wa.me/33677495288?text=Bonjour%20Katia,%20je%20souhaite%20prendre%20rendez-vous."
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-[#333] px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] hover:text-[#8ba394] transition-all duration-300 w-full sm:w-auto border border-transparent hover:border-[#8ba394]/30 flex items-center justify-center gap-2"
           >
             <WhatsAppIcon className="w-5 h-5" />
