@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans', weight: ['300
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-serif', style: ['normal', 'italic'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.katiaburgun.fr'),
   title: 'Katia Burgun | Hypnose Ericksonienne & Communication Animale',
   description: 'Katia Burgun vous accompagne vers le mieux-être grâce à l\'hypnose Ericksonienne et la communication intuitive animale. Consultations en cabinet à Fontaine-le-Dun (76) et à distance.',
   keywords: ['hypnose normandie', 'communication animale', 'hypnothérapeute fontaine le dun', 'bien-être animal', 'séance hypnose stress', 'comprendre son animal', 'katia burgun', 'hypnose dieppe', 'hypnose yvetot', 'communication animale saint valery en caux'],
