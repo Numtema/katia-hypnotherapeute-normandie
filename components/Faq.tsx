@@ -6,31 +6,31 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
   {
     question: "Est-ce que l'hypnose fonctionne vraiment ?",
-    answer: "Oui, j'obtiens d'excellents résultats notamment pour réduire le stress, améliorer le sommeil et lever des blocages inconscients."
+    answer: "Absolument. L'hypnose est une thérapie brève reconnue qui permet d'accéder à vos ressources inconscientes. Elle est particulièrement efficace pour la gestion du stress, les troubles du sommeil et le dépassement de blocages émotionnels ancrés."
   },
   {
     question: "La communication animale est-elle fiable ?",
-    answer: "Elle repose sur mon approche intuitive. Elle permet d'apporter des informations très utiles sur les émotions et les besoins de votre animal."
+    answer: "C'est une approche intuitive qui demande de la pratique et de la justesse. Elle permet de traduire les ressentis de l'animal en mots ou images compréhensibles pour l'humain, offrant ainsi des clés précieuses pour résoudre des problèmes de comportement ou apaiser un animal en souffrance."
   },
   {
     question: "Peut-on faire une séance à distance ?",
-    answer: "Oui, tout à fait. L'efficacité est comparable à une séance en cabinet, que ce soit pour l'hypnose ou pour la communication avec votre animal."
+    answer: "Oui, tout à fait. L'énergie et l'intention ne connaissent pas de frontières physiques. Que ce soit en visio pour l'hypnose ou sur photo pour la communication animale, les résultats sont identiques à une séance en cabinet."
   },
   {
     question: "Combien de séances sont nécessaires ?",
-    answer: "En moyenne, 1 à 3 séances suffisent selon votre besoin ou la problématique de votre animal."
+    answer: "Chaque parcours est unique. Cependant, l'hypnose étant une thérapie brève, on observe souvent des changements significatifs en 1 à 3 séances. Pour la communication animale, une seule consultation suffit généralement pour débloquer une situation."
   },
   {
     question: "Faut-il y croire pour que ça marche ?",
-    answer: "Non. L'expérience prime sur la croyance. Vous n'avez pas besoin d'y croire pour en ressentir les bénéfices."
+    answer: "Non, ce n'est pas une question de croyance mais d'expérience. L'état d'hypnose est un processus physiologique naturel que nous traversons tous plusieurs fois par jour (quand on est 'dans la lune' par exemple). Votre ouverture d'esprit suffit."
   },
   {
     question: "Les séances sont-elles remboursées ?",
-    answer: "Certaines mutuelles remboursent mes séances d'hypnose. Je vous fournis systématiquement une facture."
+    answer: "De plus en plus de mutuelles prennent en charge les séances d'hypnose dans le cadre de leurs forfaits 'médecines douces'. Je vous invite à consulter la page dédiée aux tarifs pour plus de détails. Je vous remettrai une facture à cet effet."
   },
   {
     question: "Peut-on aider un animal anxieux ?",
-    answer: "Oui, en comprenant ses émotions et ses besoins profonds, je peux l'aider à s'apaiser face à une situation stressante."
+    answer: "C'est l'un des motifs de consultation les plus fréquents. En comprenant l'origine de son anxiété (passé, environnement, émotions du gardien), nous pouvons lui transmettre les messages nécessaires pour qu'il retrouve sa sérénité."
   }
 ];
 

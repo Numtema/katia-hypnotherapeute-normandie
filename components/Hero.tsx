@@ -55,19 +55,19 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-[#333] mb-8 font-light leading-[1.1]"
+          className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#333] mb-8 font-light leading-[1.1]"
         >
-          Hypnose &<br/>
-          <span className="text-[#8ba394]">Communication Animale</span>
+          Retrouvez l'harmonie avec<br/>
+          <span className="text-[#8ba394] italic">vous-même et votre animal</span>
         </motion.h1>
         
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-          className="text-lg md:text-xl text-[#666] mb-12 font-light tracking-wide max-w-2xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-[#666] mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed"
         >
-          Un pont entre vous et votre animal, un chemin vers votre mieux-être.
+          Hypnose Ericksonienne & Communication Intuitive : libérez vos blocages et créez un lien profond avec vos compagnons. Un accompagnement bienveillant en Normandie et à distance.
         </motion.p>
 
         <motion.div

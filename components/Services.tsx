@@ -7,7 +7,7 @@ const services: ServiceType[] = [
     image: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80", // Dog looking up
     title: "Communication Animale",
     price: "80€ / Consultation",
-    frontDescription: "Je vous aide à comprendre les émotions et les besoins de votre animal grâce à une approche intuitive.",
+    frontDescription: "Écoutez ce que votre animal a à vous dire. Une connexion intuitive pour comprendre ses émotions et ses besoins profonds.",
     backDetails: {
       what: "Une technique intuitive basée sur la perception des émotions, ressentis et besoins de votre animal.",
       benefits: [
@@ -24,7 +24,7 @@ const services: ServiceType[] = [
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80", // Woman relaxing/eyes closed
     title: "Hypnose Ericksonienne",
     price: "60€ / Séance (1h30)",
-    frontDescription: "Je vous accompagne vers l'apaisement et la clarté, en cabinet ou à distance.",
+    frontDescription: "Libérez votre potentiel inconscient. Un voyage intérieur pour apaiser le stress, retrouver le sommeil et dépasser vos blocages.",
     backDetails: {
       what: "Une méthode thérapeutique brève utilisant un état de conscience modifié pour activer vos ressources inconscientes.",
       benefits: [
@@ -41,7 +41,7 @@ const services: ServiceType[] = [
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80", // People in workshop/learning
     title: "Formation Communication",
     price: "150€ / Personne",
-    frontDescription: "Je vous transmets les bases de la communication animale lors d'une journée d'initiation.",
+    frontDescription: "Réveillez vos capacités intuitives. Apprenez à communiquer avec le vivant lors d'une journée d'initiation à mon domicile.",
     backDetails: {
       what: "Une journée complète d'initiation pour apprendre à vous connecter intuitivement aux animaux.",
       benefits: [

@@ -62,18 +62,18 @@ export default function About() {
             </div>
             
             <h2 className="font-serif text-4xl md:text-5xl text-[#333] mb-8 font-light leading-tight">
-              L'hypnose et la communication animale <br/><span className="italic text-[#8ba394]">fonctionnent-elles vraiment ?</span>
+              Une approche holistique pour <br/><span className="italic text-[#8ba394]">votre équilibre et celui de votre animal</span>
             </h2>
             
             <div className="space-y-6 text-[#666] leading-loose font-light text-lg">
               <p className="font-medium text-[#333]">
-                Oui. L'hypnose ericksonienne vous aide à réduire le stress, améliorer votre sommeil et débloquer des comportements. La communication animale me permet de mieux comprendre les émotions et les besoins de votre animal.
+                Le bien-être est un tout. Que ce soit pour surmonter vos propres défis personnels ou pour comprendre les messages silencieux de votre compagnon, je vous propose un espace d'écoute et de transformation.
               </p>
               <p>
-                Je suis Katia Burgun, hypnothérapeute et communicatrice animalière. Je vous accueille à mon cabinet de Fontaine-le-Dun ou à distance pour vous accompagner vers un mieux-être profond, pour vous comme pour votre compagnon.
+                Je suis Katia Burgun, hypnothérapeute et communicatrice animalière. Mon rôle est de servir de pont entre vos besoins conscients et vos ressources inconscientes, tout en traduisant les émotions de vos animaux pour une cohabitation sereine.
               </p>
               <p>
-                <strong>Pourquoi me consulter ?</strong> Je vous propose une double compétence rare (humain et animal) avec une approche douce et non intrusive. Mes séances sont entièrement personnalisées, dans un cadre bienveillant et sécurisant.
+                <strong>Pourquoi me consulter ?</strong> Je vous propose une double expertise rare qui traite la relation humain-animal dans sa globalité. Mes séances sont personnalisées, douces et respectueuses du rythme de chacun, en cabinet à Fontaine-le-Dun ou à distance.
               </p>
             </div>
             

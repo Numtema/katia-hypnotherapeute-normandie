@@ -31,7 +31,7 @@ export default function Testimonials() {
             viewport={{ once: true }}
             className="font-serif text-4xl md:text-5xl text-[#333] mb-6 font-light"
           >
-            Mots de <span className="italic text-[#8ba394]">Patients</span>
+            Vos histoires, <span className="italic text-[#8ba394]">notre chemin</span>
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, width: 0 }}
