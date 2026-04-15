@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
-import { ArrowRight, RotateCcw, Check, AlertCircle } from 'lucide-react';
+import { ArrowRight, RotateCcw, Sparkles, Info, Heart } from 'lucide-react';
 import WhatsAppIcon from './WhatsAppIcon';
 
 export interface ServiceType {
@@ -85,44 +85,41 @@ export default function ServiceCard({ service, index }: { service: ServiceType, 
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
         >
           <div className="flex justify-between items-start mb-6 shrink-0">
-            <h3 className="text-xl font-serif text-[#333] font-light leading-tight pr-4">{service.title}</h3>
+            <h3 className="text-2xl font-serif text-[#333] font-light leading-tight pr-4">{service.title}</h3>
             <button onClick={() => setIsFlipped(false)} className="p-2 bg-white rounded-full shadow-sm text-[#888] hover:text-[#8ba394] transition-colors shrink-0">
               <RotateCcw className="w-4 h-4" />
             </button>
           </div>
 
-          <div className="flex-grow overflow-y-auto pr-2 space-y-5 scrollbar-hide">
-            <div className="relative w-full h-32 rounded-xl overflow-hidden shadow-sm border border-[#e8e4dc] mb-4">
-              <Image
-                src={service.image}
-                alt={service.title}
-                fill
-                className="object-cover"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-
-            <div>
+          <div className="flex-grow overflow-y-auto pr-2 space-y-6 scrollbar-hide">
+            <div className="bg-white p-5 rounded-2xl shadow-sm border border-[#f0f0f0]">
               <p className="text-sm text-[#555] font-light leading-relaxed">{service.backDetails.what}</p>
             </div>
             
             <div>
-              <h4 className="text-xs uppercase tracking-widest text-[#8ba394] font-medium mb-3">Bienfaits</h4>
-              <ul className="space-y-2">
+              <div className="flex items-center gap-2 mb-4">
+                <Sparkles className="w-4 h-4 text-[#8ba394]" />
+                <h4 className="text-xs uppercase tracking-widest text-[#8ba394] font-medium">Bienfaits</h4>
+              </div>
+              <ul className="space-y-3">
                 {service.backDetails.benefits.map((benefit: string, i: number) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-[#666] font-light">
-                    <Check className="w-4 h-4 text-[#8ba394] shrink-0 mt-0.5" />
+                  <motion.li 
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={isFlipped ? { opacity: 1, x: 0 } : { opacity: 0, x: -10 }}
+                    transition={{ duration: 0.4, delay: 0.2 + (i * 0.1) }}
+                    key={i} 
+                    className="flex items-start gap-3 text-sm text-[#666] font-light bg-white/50 p-3 rounded-xl border border-[#e8e4dc]/50"
+                  >
+                    <Heart className="w-4 h-4 text-[#b5a496] shrink-0 mt-0.5" strokeWidth={1.5} />
                     <span>{benefit}</span>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
             </div>
 
-            <div className="bg-white p-4 rounded-xl border border-[#f0f0f0]">
-              <div className="flex items-start gap-2 text-sm text-[#666] font-light">
-                <AlertCircle className="w-4 h-4 text-[#d97777] shrink-0 mt-0.5" />
-                <span className="italic">{service.backDetails.limits}</span>
-              </div>
+            <div className="bg-[#fdfbf9] p-4 rounded-xl border border-[#e8e4dc] flex items-start gap-3 text-sm text-[#666] font-light">
+              <Info className="w-5 h-5 text-[#b5a496] shrink-0 mt-0.5" strokeWidth={1.5} />
+              <span className="italic">{service.backDetails.limits}</span>
             </div>
             
             <div>
@@ -136,10 +133,13 @@ export default function ServiceCard({ service, index }: { service: ServiceType, 
               href={`https://wa.me/33677495288?text=${encodeURIComponent(`Bonjour Katia, je souhaite prendre rendez-vous pour : ${service.title}.`)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full py-3 rounded-full bg-[#25D366] text-white uppercase tracking-widest text-xs font-medium hover:bg-[#128C7E] transition-all duration-300 gap-2"
+              className="relative overflow-hidden group inline-flex items-center justify-center w-full py-3.5 rounded-full bg-[#25D366] text-white uppercase tracking-widest text-xs font-medium hover:bg-[#128C7E] transition-all duration-300 gap-2 shadow-md hover:shadow-lg"
             >
-              <WhatsAppIcon className="w-4 h-4" />
-              <span>Réserver sur WhatsApp</span>
+              <span className="relative z-10 flex items-center gap-2">
+                <WhatsAppIcon className="w-4 h-4" />
+                <span>Réserver sur WhatsApp</span>
+              </span>
+              <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out"></div>
             </a>
           </div>
         </div>
