@@ -77,7 +77,7 @@ export default function Tarifs() {
           {/* Formation */}
           <div className="bg-white p-10 rounded-[2rem] shadow-sm border border-[#e8e4dc] flex flex-col">
             <h3 className="font-serif text-2xl text-[#333] mb-2">Formation Initiation</h3>
-            <p className="text-[#666] font-light text-sm mb-6">À votre domicile (min. 3 pers)</p>
+            <p className="text-[#666] font-light text-sm mb-6">À mon domicile (min. 3 pers)</p>
             <div className="mb-8">
               <span className="text-4xl font-serif text-[#8ba394]">150€</span>
               <span className="text-[#888] text-sm"> / personne</span>

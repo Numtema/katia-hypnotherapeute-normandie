@@ -71,7 +71,7 @@ export default function Formation() {
           <div className="bg-[#f9f8f6] p-8 rounded-3xl border border-[#e8e4dc]">
             <h3 className="font-serif text-2xl text-[#333] mb-4 font-light">Informations pratiques</h3>
             <p className="text-[#666] font-light leading-relaxed mb-4">
-              La formation se déroule sur une journée complète. Je me déplace <strong>directement à votre domicile</strong> pour animer cette session dans un cadre qui vous est familier.
+              La formation se déroule sur une journée complète. Je vous reçois <strong>directement à mon domicile</strong> pour animer cette session dans un cadre chaleureux et apaisant.
             </p>
             <p className="text-[#666] font-light leading-relaxed mb-4">
               L'ambiance est toujours conviviale, bienveillante et garantie sans aucun jugement. C'est un moment de partage et de découverte.

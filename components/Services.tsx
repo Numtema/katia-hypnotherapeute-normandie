@@ -51,7 +51,7 @@ const services: ServiceType[] = [
         "Créer un lien encore plus fort et profond avec les animaux qui vous entourent"
       ],
       limits: "Un minimum de 3 personnes est requis pour maintenir la session.",
-      process: "Je me déplace à votre domicile. Ambiance conviviale, bienveillante et sans jugement."
+      process: "Je vous reçois à mon domicile. Ambiance conviviale, bienveillante et sans jugement."
     }
   }
 ];

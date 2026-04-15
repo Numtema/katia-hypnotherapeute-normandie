@@ -28,6 +28,18 @@ const nextConfig: NextConfig = {
         hostname: 'www.google.com',
         port: '',
         pathname: '/s2/favicons/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.fcdg3-1.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'scontent.fcdg3-1.fna.fbcdn.net',
+        port: '',
+        pathname: '/**',
       }
     ],
   },

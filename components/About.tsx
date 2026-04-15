@@ -22,7 +22,7 @@ export default function About() {
             {/* Main Arch Image */}
             <div className="relative w-[80%] h-[90%] ml-auto rounded-t-full overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+                src="https://scontent.fcdg3-1.fna.fbcdn.net/v/t39.30808-6/280736276_115864707788474_7526965914387568168_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=jUP3--iFNh4Q7kNvwHpwvJ2&_nc_oc=AdpIWNW1vwMQyhxm3byXUJ_FdegQrIr3jgM5jtGFeANaN5mN0mqxh18LK9gNklOrbnIwC6sX5K6RQNsqqhqdKk1w&_nc_zt=23&_nc_ht=scontent.fcdg3-1.fna&_nc_gid=gsjpyQADe76772P9QOpNkA&_nc_ss=7a3a8&oh=00_Af0oF_XrNSnxlEw3i4LkXUMGpZ8Zqv92LFO0l91cMzpdLg&oe=69E5A58C"
                 alt="Portrait Katia Burgun"
                 fill
                 className="object-cover"

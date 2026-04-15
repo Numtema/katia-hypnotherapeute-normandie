@@ -103,7 +103,7 @@ export default function Temoignages() {
             </p>
             <div className="border-t border-[#f0f0f0] pt-4 mt-auto">
               <p className="font-medium text-[#333] text-sm">Groupe de formation</p>
-              <p className="text-xs text-[#888] uppercase tracking-widest mt-1">Initiation à domicile</p>
+              <p className="text-xs text-[#888] uppercase tracking-widest mt-1">Initiation à mon domicile</p>
             </div>
           </div>
         </div>
