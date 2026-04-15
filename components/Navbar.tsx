@@ -75,37 +75,70 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Nav Menu */}
+      {/* Mobile Nav Menu Overlay */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -20, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="lg:hidden absolute top-20 left-4 right-4 bg-[#f9f8f6] shadow-xl rounded-3xl overflow-hidden border border-[#e8e4dc]"
-          >
-            <div className="py-6 px-6 flex flex-col space-y-2 text-center">
-              {navLinks.map((link) => (
-                <div key={link.name} className="flex flex-col">
-                  <a
-                    href={link.href}
-                    onClick={() => link.name !== 'Services' && setIsOpen(false)}
-                    className="text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#8ba394]/10 py-3 rounded-full text-sm uppercase tracking-widest font-medium transition-all"
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-40"
+              onClick={() => setIsOpen(false)}
+            />
+            
+            {/* Menu Panel */}
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="lg:hidden fixed top-20 left-4 right-4 bg-white/95 backdrop-blur-md shadow-2xl rounded-3xl overflow-hidden border border-[#e8e4dc] z-50"
+            >
+              <div className="py-8 px-6 flex flex-col space-y-3 text-center">
+                {navLinks.map((link, i) => (
+                  <motion.div 
+                    key={link.name} 
+                    className="flex flex-col"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + (i * 0.05) }}
                   >
-                    {link.name}
+                    <a
+                      href={link.href}
+                      onClick={() => link.name !== 'Services' && setIsOpen(false)}
+                      className="text-[#4a4a4a] hover:text-[#8ba394] py-3 rounded-full text-sm uppercase tracking-[0.15em] font-medium transition-colors"
+                    >
+                      {link.name}
+                    </a>
+                    {link.name === 'Services' && (
+                      <div className="flex flex-col bg-[#f9f8f6] rounded-2xl mt-2 py-3 border border-[#f0f0f0]">
+                        <a href="/communication-animale" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2.5 text-xs uppercase tracking-widest font-medium transition-colors">Communication Animale</a>
+                        <a href="/hypnose" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2.5 text-xs uppercase tracking-widest font-medium transition-colors">Hypnose Ericksonienne</a>
+                        <a href="/formation" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2.5 text-xs uppercase tracking-widest font-medium transition-colors">Formation</a>
+                      </div>
+                    )}
+                  </motion.div>
+                ))}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + (navLinks.length * 0.05) }}
+                  className="pt-4 mt-2 border-t border-[#f0f0f0]"
+                >
+                  <a 
+                    href="/#contact" 
+                    onClick={() => setIsOpen(false)}
+                    className="inline-block w-full py-4 rounded-full bg-[#8ba394] text-white hover:bg-[#7a9283] transition-all duration-300 text-sm uppercase tracking-widest font-medium shadow-md"
+                  >
+                    Prendre Rendez-vous
                   </a>
-                  {link.name === 'Services' && (
-                    <div className="flex flex-col bg-[#f0eee9] rounded-2xl mt-1 py-2">
-                      <a href="/communication-animale" onClick={() => setIsOpen(false)} className="text-[#5a5a5a] hover:text-[#8ba394] py-2 text-xs uppercase tracking-widest font-medium">Communication Animale</a>
-                      <a href="/hypnose" onClick={() => setIsOpen(false)} className="text-[#5a5a5a] hover:text-[#8ba394] py-2 text-xs uppercase tracking-widest font-medium">Hypnose Ericksonienne</a>
-                      <a href="/formation" onClick={() => setIsOpen(false)} className="text-[#5a5a5a] hover:text-[#8ba394] py-2 text-xs uppercase tracking-widest font-medium">Formation</a>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </motion.div>
+                </motion.div>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </nav>

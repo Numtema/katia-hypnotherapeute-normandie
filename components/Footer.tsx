@@ -62,9 +62,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#f0f0f0] flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-[#888] font-light">© {new Date().getFullYear()} Katia Burgun. Tous droits réservés.</p>
-          <p className="text-sm text-[#888] font-light">Fait avec douceur</p>
+        <div className="pt-8 border-t border-[#f0f0f0] flex flex-col md:flex-row justify-center items-center gap-4">
+          <p className="text-sm text-[#888] font-light text-center">© {new Date().getFullYear()} Katia Burgun. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
