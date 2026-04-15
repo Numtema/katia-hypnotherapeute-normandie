@@ -38,14 +38,14 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-32 bg-[#f9f8f6]">
+    <section id="faq" className="py-20 md:py-32 bg-[#f9f8f6]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif text-4xl md:text-5xl text-[#333] mb-6 font-light"
+            className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#333] mb-4 md:mb-6 font-light"
           >
             Questions <span className="italic text-[#8ba394]">Fréquentes</span>
           </motion.h2>
@@ -72,9 +72,9 @@ export default function Faq() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-8 py-6 flex justify-between items-center text-left focus:outline-none"
+                className="w-full px-6 md:px-8 py-5 md:py-6 flex justify-between items-center text-left focus:outline-none"
               >
-                <span className="font-serif text-lg text-[#333] pr-8">{faq.question}</span>
+                <span className="font-serif text-base md:text-lg text-[#333] pr-4 md:pr-8">{faq.question}</span>
                 <span className="text-[#8ba394] flex-shrink-0 bg-[#f9f8f6] p-2 rounded-full">
                   {openIndex === index ? <Minus size={20} /> : <Plus size={20} />}
                 </span>
@@ -88,7 +88,7 @@ export default function Faq() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-8 pb-6 text-[#666] font-light leading-relaxed">
+                    <div className="px-6 md:px-8 pb-5 md:pb-6 text-[#666] font-light leading-relaxed text-sm md:text-base">
                       {faq.answer}
                     </div>
                   </motion.div>

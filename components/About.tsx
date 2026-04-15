@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-white relative overflow-hidden">
+    <section id="about" className="py-20 md:py-32 bg-white relative overflow-hidden">
       {/* Decorative background shape */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-[#f9f8f6] rounded-l-full opacity-50 -z-10 transform translate-x-1/2"></div>
 
@@ -17,7 +17,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2 }}
-            className="relative h-[600px] md:h-[700px] w-full flex items-center justify-center"
+            className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] w-full flex items-center justify-center"
           >
             {/* Main Arch Image */}
             <div className="relative w-[80%] h-[90%] ml-auto rounded-t-full overflow-hidden shadow-2xl">
@@ -61,11 +61,11 @@ export default function About() {
               <span className="uppercase tracking-[0.2em] text-sm text-[#8ba394]">À propos</span>
             </div>
             
-            <h2 className="font-serif text-4xl md:text-5xl text-[#333] mb-8 font-light leading-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#333] mb-6 md:mb-8 font-light leading-tight">
               Une approche holistique pour <br/><span className="italic text-[#8ba394]">votre équilibre et celui de votre animal</span>
             </h2>
             
-            <div className="space-y-6 text-[#666] leading-loose font-light text-lg">
+            <div className="space-y-4 md:space-y-6 text-[#666] leading-relaxed md:leading-loose font-light text-base md:text-lg">
               <p className="font-medium text-[#333]">
                 Le bien-être est un tout. Que ce soit pour surmonter vos propres défis personnels ou pour comprendre les messages silencieux de votre compagnon, je vous propose un espace d'écoute et de transformation.
               </p>

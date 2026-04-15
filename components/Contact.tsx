@@ -56,12 +56,12 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 bg-[#f9f8f6]">
+    <section id="contact" className="py-20 md:py-32 bg-[#f9f8f6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
           
           {/* Left Side - Info & Image */}
-          <div className="lg:w-2/5 relative bg-[#b5a496] text-white p-12 flex flex-col justify-between overflow-hidden">
+          <div className="lg:w-2/5 relative bg-[#b5a496] text-white p-8 sm:p-12 flex flex-col justify-between overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
               <Image 
@@ -74,7 +74,7 @@ export default function Contact() {
             </div>
 
             <div className="relative z-10">
-              <h3 className="font-serif text-3xl mb-2 font-light">Contactez-moi</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl mb-2 font-light">Contactez-moi</h3>
               <p className="text-white/80 font-light mb-12">Je suis là pour répondre à vos questions et vous accompagner.</p>
 
               <div className="space-y-8">
@@ -114,8 +114,8 @@ export default function Contact() {
           </div>
 
           {/* Right Side - Form */}
-          <div className="lg:w-3/5 p-12 lg:p-20">
-            <h3 className="font-serif text-3xl text-[#333] mb-8 font-light">Envoyer un message</h3>
+          <div className="lg:w-3/5 p-8 sm:p-12 lg:p-20">
+            <h3 className="font-serif text-2xl sm:text-3xl text-[#333] mb-6 sm:mb-8 font-light">Envoyer un message</h3>
             
             <form className="space-y-8" onSubmit={handleWhatsAppSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

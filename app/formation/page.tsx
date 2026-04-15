@@ -10,14 +10,14 @@ export default function Formation() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative pt-40 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="lg:w-1/2">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[1px] bg-[#8ba394]"></div>
               <span className="uppercase tracking-[0.2em] text-sm text-[#8ba394]">Service</span>
             </div>
-            <h1 className="font-serif text-4xl md:text-6xl text-[#333] mb-6 font-light leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl text-[#333] mb-6 font-light leading-tight">
               Formation <br/><span className="italic text-[#8ba394]">Communication Animale</span>
             </h1>
             <p className="text-[#666] text-lg font-light leading-relaxed mb-8">
@@ -29,7 +29,7 @@ export default function Formation() {
             </div>
           </div>
           <div className="lg:w-1/2 w-full">
-            <div className="relative h-[400px] w-full rounded-3xl overflow-hidden shadow-xl">
+            <div className="relative h-[250px] sm:h-[300px] md:h-[400px] w-full rounded-3xl overflow-hidden shadow-xl">
               <Image 
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80" 
                 alt="Formation Communication Animale" 
@@ -43,7 +43,7 @@ export default function Formation() {
       </section>
 
       {/* Details Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-3xl text-[#333] mb-8 font-light">Apprenez à communiquer avec les animaux</h2>
           <div className="space-y-6 text-[#666] font-light leading-relaxed text-lg mb-12">

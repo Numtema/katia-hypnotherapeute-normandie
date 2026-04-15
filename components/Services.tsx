@@ -58,7 +58,7 @@ const services: ServiceType[] = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-[#f9f8f6] relative">
+    <section id="services" className="py-20 md:py-32 bg-[#f9f8f6] relative">
       {/* Decorative background element */}
       <div className="absolute top-40 left-0 w-64 h-64 bg-[#8ba394]/10 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-40 right-0 w-96 h-96 bg-[#e8e4dc]/50 rounded-full blur-3xl -z-10"></div>
@@ -75,7 +75,7 @@ export default function Services() {
               <div className="w-12 h-[1px] bg-[#8ba394]"></div>
               <span className="uppercase tracking-[0.2em] text-sm text-[#8ba394]">Expertise</span>
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#333] font-light leading-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#333] font-light leading-tight">
               Services <br/><span className="italic text-[#8ba394]">& Tarifs</span>
             </h2>
           </motion.div>

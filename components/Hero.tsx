@@ -7,7 +7,7 @@ import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen flex flex-col justify-end items-center pb-32 md:pb-40 overflow-hidden bg-[#f9f8f6]">
+    <section id="home" className="relative min-h-[100svh] flex flex-col justify-end items-center pb-24 sm:pb-32 md:pb-40 overflow-hidden bg-[#f9f8f6]">
       {/* Animated Background Image */}
       <motion.div
         initial={{ scale: 1.05 }}
@@ -32,13 +32,13 @@ export default function Hero() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute top-32 md:top-40 right-4 md:right-12 lg:right-32 bg-white/80 backdrop-blur-md px-6 py-3 rounded-full shadow-sm border border-white/50 flex items-center gap-3 z-20"
+        className="absolute top-28 sm:top-32 md:top-40 right-2 sm:right-4 md:right-12 lg:right-32 bg-white/80 backdrop-blur-md px-4 py-2 sm:px-6 sm:py-3 rounded-full shadow-sm border border-white/50 flex items-center gap-2 sm:gap-3 z-20"
       >
-        <span className="relative flex h-3 w-3">
+        <span className="relative flex h-2 w-2 sm:h-3 sm:w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#8ba394] opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-3 w-3 bg-[#8ba394]"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 sm:h-3 sm:w-3 bg-[#8ba394]"></span>
         </span>
-        <span className="text-xs uppercase tracking-widest text-[#555] font-medium">Séances en ligne & Cabinet</span>
+        <span className="text-[10px] sm:text-xs uppercase tracking-widest text-[#555] font-medium">Séances en ligne & Cabinet</span>
       </motion.div>
 
       <div className="relative z-10 text-center max-w-5xl mx-auto px-4 mt-10">
@@ -55,17 +55,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
-          className="font-serif text-4xl md:text-6xl lg:text-7xl text-[#333] mb-8 font-light leading-[1.1]"
+          className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-[#333] mb-6 sm:mb-8 font-light leading-[1.2] sm:leading-[1.1]"
         >
-          Retrouvez l'harmonie avec<br/>
-          <span className="text-[#8ba394] italic">vous-même et votre animal</span>
+          Retrouvez l'harmonie avec<br className="hidden sm:block" />
+          <span className="text-[#8ba394] italic sm:not-italic sm:block"> vous-même et votre animal</span>
         </motion.h1>
         
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-          className="text-lg md:text-xl text-[#666] mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-[#666] mb-10 sm:mb-12 font-light tracking-wide max-w-3xl mx-auto leading-relaxed px-2"
         >
           Hypnose Ericksonienne & Communication Intuitive : libérez vos blocages et créez un lien profond avec vos compagnons. Un accompagnement bienveillant en Normandie et à distance.
         </motion.p>
@@ -74,11 +74,11 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.8 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
         >
           <a
             href="#services"
-            className="bg-[#8ba394] text-white px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#7a9283] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 w-full sm:w-auto"
+            className="bg-[#8ba394] text-white px-8 sm:px-10 py-4 rounded-full text-xs sm:text-sm uppercase tracking-[0.2em] hover:bg-[#7a9283] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 w-full sm:w-auto"
           >
             Découvrir les services
           </a>
@@ -86,7 +86,7 @@ export default function Hero() {
             href="https://wa.me/33677495288?text=Bonjour%20Katia,%20je%20souhaite%20prendre%20rendez-vous."
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#333] px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] hover:text-[#8ba394] transition-all duration-300 w-full sm:w-auto border border-transparent hover:border-[#8ba394]/30 flex items-center justify-center gap-2"
+            className="text-[#333] px-8 sm:px-10 py-4 rounded-full text-xs sm:text-sm uppercase tracking-[0.2em] hover:text-[#8ba394] transition-all duration-300 w-full sm:w-auto border border-[#e8e4dc] sm:border-transparent hover:border-[#8ba394]/30 flex items-center justify-center gap-2"
           >
             <WhatsAppIcon className="w-5 h-5" />
             Prendre rendez-vous

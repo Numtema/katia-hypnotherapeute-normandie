@@ -27,7 +27,7 @@ export default function ServiceCard({ service, index }: { service: ServiceType, 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.8, delay: index * 0.2 }}
-      className="relative h-[620px] w-full group"
+      className="relative h-[580px] sm:h-[620px] w-full group"
       style={{ perspective: '1000px' }}
     >
       <motion.div
@@ -51,7 +51,7 @@ export default function ServiceCard({ service, index }: { service: ServiceType, 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-80"></div>
             <div className="absolute bottom-4 left-6 right-6">
-              <h3 className="text-2xl font-serif text-white mb-1 font-light drop-shadow-md">{service.title}</h3>
+              <h3 className="text-xl sm:text-2xl font-serif text-white mb-1 font-light drop-shadow-md">{service.title}</h3>
             </div>
           </div>
           

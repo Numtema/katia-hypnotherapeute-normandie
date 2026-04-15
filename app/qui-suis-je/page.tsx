@@ -10,13 +10,13 @@ export default function QuiSuisJe() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
         <div className="flex justify-center items-center gap-4 mb-6">
           <div className="w-8 h-[1px] bg-[#8ba394]"></div>
           <span className="uppercase tracking-[0.2em] text-sm text-[#8ba394]">Mon parcours</span>
           <div className="w-8 h-[1px] bg-[#8ba394]"></div>
         </div>
-        <h1 className="font-serif text-4xl md:text-6xl text-[#333] mb-6 font-light leading-tight">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl text-[#333] mb-6 font-light leading-tight">
           Qui suis-je ? <br/><span className="italic text-[#8ba394]">Katia Burgun</span>
         </h1>
         <p className="text-[#666] text-lg font-light leading-relaxed max-w-2xl mx-auto">
@@ -30,7 +30,7 @@ export default function QuiSuisJe() {
           <div className="flex flex-col lg:flex-row">
             
             {/* Image Portrait */}
-            <div className="lg:w-2/5 relative h-[400px] lg:h-auto">
+            <div className="lg:w-2/5 relative h-[300px] sm:h-[400px] lg:h-auto">
               <Image 
                 src="https://scontent.fcdg3-1.fna.fbcdn.net/v/t39.30808-6/280736276_115864707788474_7526965914387568168_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=jUP3--iFNh4Q7kNvwHpwvJ2&_nc_oc=AdpIWNW1vwMQyhxm3byXUJ_FdegQrIr3jgM5jtGFeANaN5mN0mqxh18LK9gNklOrbnIwC6sX5K6RQNsqqhqdKk1w&_nc_zt=23&_nc_ht=scontent.fcdg3-1.fna&_nc_gid=gsjpyQADe76772P9QOpNkA&_nc_ss=7a3a8&oh=00_Af0oF_XrNSnxlEw3i4LkXUMGpZ8Zqv92LFO0l91cMzpdLg&oe=69E5A58C" 
                 alt="Katia Burgun - Thérapeute" 
@@ -67,7 +67,7 @@ export default function QuiSuisJe() {
       </section>
 
       {/* Cabinet & Local SEO Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           
           <div className="md:w-1/2">

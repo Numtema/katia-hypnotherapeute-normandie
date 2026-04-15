@@ -24,13 +24,13 @@ export default function Tarifs() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-40 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
         <div className="flex justify-center items-center gap-4 mb-6">
           <div className="w-8 h-[1px] bg-[#8ba394]"></div>
           <span className="uppercase tracking-[0.2em] text-sm text-[#8ba394]">Transparence</span>
           <div className="w-8 h-[1px] bg-[#8ba394]"></div>
         </div>
-        <h1 className="font-serif text-4xl md:text-6xl text-[#333] mb-6 font-light leading-tight">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl text-[#333] mb-6 font-light leading-tight">
           Tarifs & <span className="italic text-[#8ba394]">Remboursements</span>
         </h1>
         <p className="text-[#666] text-lg font-light leading-relaxed max-w-2xl mx-auto">
@@ -119,7 +119,7 @@ export default function Tarifs() {
       </section>
 
       {/* Mutuelles Section (SEO Optimized) */}
-      <section className="py-20 bg-white">
+      <section className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-8">
             <ShieldCheck className="w-8 h-8 text-[#8ba394]" />
@@ -158,7 +158,7 @@ export default function Tarifs() {
       </section>
 
       {/* Modalités de paiement */}
-      <section className="py-20 bg-[#f9f8f6]">
+      <section className="py-16 md:py-20 bg-[#f9f8f6]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-10 rounded-[2rem] shadow-sm border border-[#e8e4dc] flex flex-col md:flex-row items-center gap-8">
             <div className="w-16 h-16 bg-[#8ba394]/10 rounded-full flex items-center justify-center shrink-0">

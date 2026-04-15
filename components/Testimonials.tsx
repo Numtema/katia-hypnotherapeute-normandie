@@ -22,14 +22,14 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-32 bg-white border-y border-[#f0f0f0]">
+    <section className="py-20 md:py-32 bg-white border-y border-[#f0f0f0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-serif text-4xl md:text-5xl text-[#333] mb-6 font-light"
+            className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#333] mb-4 md:mb-6 font-light"
           >
             Vos histoires, <span className="italic text-[#8ba394]">notre chemin</span>
           </motion.h2>
