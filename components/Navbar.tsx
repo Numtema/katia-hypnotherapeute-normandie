@@ -28,8 +28,8 @@ export default function Navbar() {
         
         <a href="/#home" className="flex items-center gap-3 group">
           <div className="flex flex-col whitespace-nowrap">
-            <span className={`font-sans tracking-widest text-[#333] uppercase font-light group-hover:text-[#8ba394] transition-all duration-300 ${isScrolled ? 'text-lg' : 'text-xl'}`}>Katia Burgun</span>
-            <span className={`font-serif italic text-[#8ba394] transition-all duration-300 ${isScrolled ? 'text-xs' : 'text-sm'}`}>Hypnose & Animaux</span>
+            <span className={`font-sans tracking-widest text-[#333] uppercase font-light group-hover:text-[#8ba394] transition-all duration-300 ${isScrolled ? 'text-base' : 'text-lg'}`}>Katia Burgun</span>
+            <span className={`font-serif italic text-[#8ba394] transition-all duration-300 ${isScrolled ? 'text-[10px]' : 'text-xs'}`}>Hypnose & Animaux</span>
           </div>
         </a>
 
@@ -41,15 +41,15 @@ export default function Navbar() {
                 <div key={link.name} className="relative group">
                   <a 
                     href={link.href} 
-                    className="relative px-4 py-2 text-[#5a5a5a] hover:text-[#8ba394] transition-colors text-xs uppercase tracking-[0.15em] font-medium rounded-full hover:bg-[#8ba394]/10 cursor-pointer flex items-center gap-1"
+                    className="relative px-3 py-2 text-[#5a5a5a] hover:text-[#8ba394] transition-colors text-[11px] uppercase tracking-[0.15em] font-medium rounded-full hover:bg-[#8ba394]/10 cursor-pointer flex items-center gap-1"
                   >
                     {link.name}
                     <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
                   </a>
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-[#e8e4dc] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col py-2">
-                    <a href="/communication-animale" className="px-4 py-3 text-xs uppercase tracking-widest text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#f9f8f6] transition-colors">Communication Animale</a>
-                    <a href="/hypnose" className="px-4 py-3 text-xs uppercase tracking-widest text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#f9f8f6] transition-colors">Hypnose Ericksonienne</a>
-                    <a href="/formation" className="px-4 py-3 text-xs uppercase tracking-widest text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#f9f8f6] transition-colors">Formation</a>
+                    <a href="/communication-animale" className="px-4 py-3 text-[10px] uppercase tracking-widest text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#f9f8f6] transition-colors">Communication Animale</a>
+                    <a href="/hypnose" className="px-4 py-3 text-[10px] uppercase tracking-widest text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#f9f8f6] transition-colors">Hypnose Ericksonienne</a>
+                    <a href="/formation" className="px-4 py-3 text-[10px] uppercase tracking-widest text-[#5a5a5a] hover:text-[#8ba394] hover:bg-[#f9f8f6] transition-colors">Formation</a>
                   </div>
                 </div>
               );
@@ -58,13 +58,13 @@ export default function Navbar() {
               <a 
                 key={link.name} 
                 href={link.href} 
-                className="relative px-4 py-2 text-[#5a5a5a] hover:text-[#8ba394] transition-colors text-xs uppercase tracking-[0.15em] font-medium rounded-full hover:bg-[#8ba394]/10 cursor-pointer"
+                className="relative px-3 py-2 text-[#5a5a5a] hover:text-[#8ba394] transition-colors text-[11px] uppercase tracking-[0.15em] font-medium rounded-full hover:bg-[#8ba394]/10 cursor-pointer"
               >
                 {link.name}
               </a>
             );
           })}
-          <a href="/#contact" className="ml-4 px-6 py-2 rounded-full bg-[#8ba394] text-white hover:bg-[#7a9283] transition-all duration-300 text-xs uppercase tracking-widest font-medium shadow-sm hover:shadow-md">
+          <a href="/#contact" className="ml-2 px-5 py-2 rounded-full bg-[#8ba394] text-white hover:bg-[#7a9283] transition-all duration-300 text-[11px] uppercase tracking-widest font-medium shadow-sm hover:shadow-md">
             Prendre RDV
           </a>
         </div>
@@ -109,15 +109,15 @@ export default function Navbar() {
                     <a
                       href={link.href}
                       onClick={() => link.name !== 'Services' && setIsOpen(false)}
-                      className="text-[#4a4a4a] hover:text-[#8ba394] py-3 rounded-full text-sm uppercase tracking-[0.15em] font-medium transition-colors"
+                      className="text-[#4a4a4a] hover:text-[#8ba394] py-2.5 rounded-full text-xs uppercase tracking-[0.15em] font-medium transition-colors"
                     >
                       {link.name}
                     </a>
                     {link.name === 'Services' && (
-                      <div className="flex flex-col bg-[#f9f8f6] rounded-2xl mt-2 py-3 border border-[#f0f0f0]">
-                        <a href="/communication-animale" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2.5 text-xs uppercase tracking-widest font-medium transition-colors">Communication Animale</a>
-                        <a href="/hypnose" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2.5 text-xs uppercase tracking-widest font-medium transition-colors">Hypnose Ericksonienne</a>
-                        <a href="/formation" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2.5 text-xs uppercase tracking-widest font-medium transition-colors">Formation</a>
+                      <div className="flex flex-col bg-[#f9f8f6] rounded-2xl mt-2 py-2 border border-[#f0f0f0]">
+                        <a href="/communication-animale" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2 text-[11px] uppercase tracking-widest font-medium transition-colors">Communication Animale</a>
+                        <a href="/hypnose" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2 text-[11px] uppercase tracking-widest font-medium transition-colors">Hypnose Ericksonienne</a>
+                        <a href="/formation" onClick={() => setIsOpen(false)} className="text-[#666] hover:text-[#8ba394] py-2 text-[11px] uppercase tracking-widest font-medium transition-colors">Formation</a>
                       </div>
                     )}
                   </motion.div>
@@ -131,7 +131,7 @@ export default function Navbar() {
                   <a 
                     href="/#contact" 
                     onClick={() => setIsOpen(false)}
-                    className="inline-block w-full py-4 rounded-full bg-[#8ba394] text-white hover:bg-[#7a9283] transition-all duration-300 text-sm uppercase tracking-widest font-medium shadow-md"
+                    className="inline-block w-full py-3.5 rounded-full bg-[#8ba394] text-white hover:bg-[#7a9283] transition-all duration-300 text-xs uppercase tracking-widest font-medium shadow-md"
                   >
                     Prendre Rendez-vous
                   </a>

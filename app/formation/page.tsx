@@ -31,7 +31,7 @@ export default function Formation() {
           <div className="lg:w-1/2 w-full">
             <div className="relative h-[250px] sm:h-[300px] md:h-[400px] w-full rounded-3xl overflow-hidden shadow-xl">
               <Image 
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80" 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1000&q=80" 
                 alt="Formation Communication Animale" 
                 fill 
                 className="object-cover"

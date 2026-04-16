@@ -65,8 +65,8 @@ export default function Contact() {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
               <Image 
-                src="https://picsum.photos/seed/contactnature/800/1000"
-                alt="Nature"
+                src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?auto=format&fit=crop&w=800&q=80"
+                alt="Bureau chaleureux"
                 fill
                 className="object-cover opacity-20 mix-blend-overlay"
                 referrerPolicy="no-referrer"

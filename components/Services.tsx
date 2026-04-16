@@ -21,7 +21,7 @@ const services: ServiceType[] = [
     }
   },
   {
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80", // Woman relaxing/eyes closed
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80", // Woman meditating/relaxing
     title: "Hypnose Ericksonienne",
     price: "60€ / Séance (1h30)",
     frontDescription: "Libérez votre potentiel inconscient. Un voyage intérieur pour apaiser le stress, retrouver le sommeil et dépasser vos blocages.",
@@ -38,7 +38,7 @@ const services: ServiceType[] = [
     }
   },
   {
-    image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80", // People in workshop/learning
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80", // Woman teaching/smiling
     title: "Formation Communication",
     price: "150€ / Personne",
     frontDescription: "Réveillez vos capacités intuitives. Apprenez à communiquer avec le vivant lors d'une journée d'initiation à mon domicile.",
